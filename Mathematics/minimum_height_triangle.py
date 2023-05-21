@@ -16,7 +16,7 @@ import sys
 #
 
 def lowestTriangle(trianglebase, area):
-    # Write your code here
+    return math.ceil(2*(area/trianglebase))
 
 if __name__ == '__main__':
     fptr = open(os.environ['OUTPUT_PATH'], 'w')
