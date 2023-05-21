@@ -18,13 +18,15 @@ import sys
 def wilsons_theorem(n):
     return (math.factorial(n-1)+1)%n == 0
 
-
-def primeCount(n):
-    pass
-    
+def generate_primes(n):
+    return [i for i in range(1, n) if wilsons_theorem(i)]
 
 if __name__ == '__main__':
-    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+    #specific to hackerrank
+    #fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    #specific to local
+    fptr = sys.stdout
 
     q = int(input().strip())
 
