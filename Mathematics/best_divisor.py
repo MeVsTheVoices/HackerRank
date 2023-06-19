@@ -10,8 +10,7 @@ import sys
 
 
 if __name__ == '__main__':
-    #n = int(input().strip())
-    n = 4444
+    n = int(input().strip())
     highest_score = 0
     best_divisor = 0
     for i in range(1, (n + 1)):
