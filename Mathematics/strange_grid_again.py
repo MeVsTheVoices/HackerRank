@@ -15,24 +15,17 @@ import sys
 #  2. INTEGER c
 #
 
-def griddy(firstLine, secondLine, r, c):
-    if r == 1:
-        return firstLine[c-1]
-    elif r == 2:
-        return secondLine[c-1]
-    else:
-        return griddy(
-            [x + 10 for x in firstLine],
-            [x + 10 for x in secondLine],
-            r - 2,
-            c
-        )
-
 
 def strangeGrid(r, c):
-    return griddy([x for x in range (0, 9, 2)], [x for x in range (1, 10, 2)], r, c)
+    if ((r - 1) % 2) == 0:
+        offset = 0
+    else:
+        offset = 1
+    r = r - 1
+    return (r // 2) * 10 + (c - 1) * 2 + offset
 
 if __name__ == '__main__':
+    sys.setrecursionlimit(235345342)
     #fptr = open(os.environ['OUTPUT_PATH'], 'w')
     fptr = sys.stdout
 
