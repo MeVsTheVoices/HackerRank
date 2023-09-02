@@ -10,7 +10,7 @@ My initial apporach was to use the naive exponential solution and iterate throug
 - Space complexity: O(n)
 
 ## Code
->
+```java
     class Solution {
 
         public int[] twoSum(int[] nums, int target) {
@@ -27,3 +27,4 @@ My initial apporach was to use the naive exponential solution and iterate throug
             return new int[]{};
         }
     }
+```

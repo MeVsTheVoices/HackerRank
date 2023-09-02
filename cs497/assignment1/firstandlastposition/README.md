@@ -11,7 +11,7 @@ I first tried to use a regular binary search, then use the results of this funct
 - Space complexity: O(1)
 
 ## Code
->
+```java
     class Solution {
         public int[] searchRange(int[] nums, int target) {
             // find the center
@@ -49,4 +49,4 @@ I first tried to use a regular binary search, then use the results of this funct
         }
 
     }
-    
+```
