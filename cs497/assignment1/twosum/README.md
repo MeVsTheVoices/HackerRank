@@ -1,4 +1,6 @@
 # TwoSum
+## Problem
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
 
 ## Intuition
 uses the fact that for every x, there is only one target - x such that (target - x) + x == target
