@@ -1,4 +1,6 @@
 # Find First and Last Position of Element in Sorted Array
+## Problem
+Given an array of integers nums sorted in ascending order, find the starting and ending position of a given target value.
 
 ## Intuition
 We're given a sorted array of integer and asked to find the first and last indexes of a particular element within. The specification lists O(log n) as the time complexity, which is a hint that we should be using a binary search algorithm. The problem is that we're looking for the first and last index of a particular element, which means we can't just return the index of the first element we find, we need to keep searching until we find the last index of the element.
