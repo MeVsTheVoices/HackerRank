@@ -1,4 +1,4 @@
-package firstandlastposition;
+package cs497.assignment1.firstandlastposition;
 
 import static org.junit.Assert.assertTrue;
 

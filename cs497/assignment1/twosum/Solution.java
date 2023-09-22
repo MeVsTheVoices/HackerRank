@@ -1,4 +1,4 @@
-package twosum;
+package cs497.assignment1.twosum;
 
 import java.util.Arrays;
 import java.util.HashMap;

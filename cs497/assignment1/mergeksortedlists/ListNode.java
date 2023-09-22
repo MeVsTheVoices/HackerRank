@@ -1,5 +1,5 @@
 
-package mergeksortedlists;
+package cs497.assignment1.mergeksortedlists;
 
  public class ListNode {
      int val;

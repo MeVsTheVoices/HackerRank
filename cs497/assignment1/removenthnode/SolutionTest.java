@@ -1,4 +1,4 @@
-package removenthnode;
+package cs497.assignment1.removenthnode;
 
 import static org.junit.Assert.assertTrue;
 
