@@ -1,4 +1,4 @@
-package medianoftwosortedarrays;
+package cs497.assignment1.medianoftwosortedarrays;
 
 import static org.junit.Assert.assertTrue;
 

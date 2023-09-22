@@ -1,4 +1,4 @@
-package mergeksortedlists;
+package cs497.assignment1.mergeksortedlists;
 
 import static org.junit.Assert.assertEquals;
 

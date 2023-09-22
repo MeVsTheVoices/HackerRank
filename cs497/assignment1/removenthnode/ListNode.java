@@ -1,5 +1,5 @@
 
-package removenthnode;
+package cs497.assignment1.removenthnode;
 
  public class ListNode {
      int val;

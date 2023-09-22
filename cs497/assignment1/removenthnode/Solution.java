@@ -1,4 +1,4 @@
-package removenthnode;
+package cs497.assignment1.removenthnode;
 
 class Solution {
     public ListNode removeNthFromEnd(ListNode head, int n) {

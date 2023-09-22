@@ -1,4 +1,4 @@
-package medianoftwosortedarrays;
+package cs497.assignment1.medianoftwosortedarrays;
 
 class Solution {
     public double findMedianSortedArrays(int[] nums1, int[] nums2) {

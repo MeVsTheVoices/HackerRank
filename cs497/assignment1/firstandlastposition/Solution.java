@@ -1,4 +1,4 @@
-package firstandlastposition;
+package cs497.assignment1.firstandlastposition;
 
 class Solution {
     public int[] searchRange(int[] nums, int target) {

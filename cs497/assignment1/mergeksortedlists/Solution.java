@@ -1,4 +1,4 @@
-package mergeksortedlists;
+package cs497.assignment1.mergeksortedlists;
 class Solution {
     public ListNode mergeKLists(ListNode[] lists) {
         // there is a more optimum solution than the one I'm about to implement
