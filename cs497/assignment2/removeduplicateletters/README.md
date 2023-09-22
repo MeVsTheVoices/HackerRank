@@ -1,46 +1,43 @@
 # Intuition
-My intuition was a bit off for this at first, my initial approach was comparable, but, it needed changes. To begin with, I sorted the characters, then deleted one of every character, then, I went backwards through that list and deleted the characters of the original array until only none were remaining. This approach instead uses the same bones, but, instead of the complexity of traversing two arrays, we use the hash map that was built already, and then check whether there are characters greater than the one we want to keep that occur after each character.
+It's asking for linear time, I started off about to implement counting sort, but, decided against, by the time I had implemented a hashmap to save on space, I realized, that I already had a sorted keyset to work from. With that, I was able to implement a linear time solution. All this required was that I then iterate through the hash maps keyset and return the largest gap between two keys.
 
 # Approach
-First we go through and get a count of every character. From this we then loop through the string provided. We only want to keep one of each element, but, we want to check if, having deleted this element, instead of another, we would move a larger element closer to the front of the array. We use linked lists for easy insertion and remove, then rebuild that as a string to return a proper value.
+Store everything in a hash map, then iterate through the keyset, and return the largest gap between two keys.
 
 # Complexity
-- Time complexity: O(n^2)
+- Time complexity: O(n)
 
 - Space complexity: O(n)
 
 # Code
 ```
 class Solution {
-    public String removeDuplicateLetters(String s) {
-        if (s == null || s.length() == 0) {
-            return "";
-        }
-        Map<Character, Integer> charCount = new HashMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            charCount.put(s.charAt(i), charCount.getOrDefault(s.charAt(i), 0) + 1);
+    public int maximumGap(int[] nums) {
+        HashMap<Integer, Integer> map = new HashMap<>();
+        int max = 0;
+        for (int i = 0; i < nums.length; i++)
+            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
+
+        Iterator<Integer> it = map.keySet().iterator();
+        int itPlusOne = it.next();
+
+        HashMap<Integer, Integer> map2 = new HashMap<>();
+        while (it.hasNext()) {
+            int itNext = it.next();
+            map2.put(itNext, itNext - itPlusOne);
+            itPlusOne = itNext;
         }
 
-        List<Character> chars = new LinkedList<>();
-        for (int i = 0; i < s.length(); i++) {
-            char c = s.charAt(i);
-            charCount.put(c, charCount.get(c) - 1);
-            if (chars.contains(c)) {
-                continue;
-            }
-            while (!chars.isEmpty() && chars.get(chars.size() - 1) > c && charCount.get(chars.get(chars.size() - 1)) > 0) {
-                chars.remove(chars.size() - 1);
-            }
-            chars.add(c);
+        Iterator<Integer> it2 = map2.keySet().iterator();
+        while (it2.hasNext()) {
+            int itNext = it2.next();
+            if (map2.get(itNext) > max)
+                max = map2.get(itNext);
         }
 
-        
+        return max;
 
-        StringBuilder sb = new StringBuilder();
-        for (Character c : chars) {
-            sb.append(c);
-        }
-        return sb.toString();
     }
+
 }
 ```
