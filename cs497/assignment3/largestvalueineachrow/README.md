@@ -3,7 +3,7 @@ This was a great problem to get to work with after I had a hard time with the la
 
 # Approach
 - Push the root node on to queue
-- For each level in the tree, we, go through only the nodes currently pushed on to our queue, and compare those values to a maximum, if it is greater than the maximum, we keep than, pushing only one value per row on to our accumulating list
+- For each level in the tree, we, go through only the nodes currently pushed on to our queue, and compare those values to a maximum, if it is greater than the maximum, we keep them, pushing only one value per row on to our accumulating list
 - As we go through each of these to compare, we push their left and right children on to the queue, we'll return to those on the next iteration.
 - We continue until there are no nodes on the queue, meaning that their were no children on that level
 
