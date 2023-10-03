@@ -9,6 +9,7 @@ My first attempt worked for the vast majority of cases, but, exceeded time limit
 
 - Space complexity: O(n)
 
+# Code
 ```java
 class Solution {
     private int currentMax = Integer.MIN_VALUE;
