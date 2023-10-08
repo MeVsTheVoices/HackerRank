@@ -1,12 +1,16 @@
-package leetcode.threesum;
+# Intuition
+My original intuition exceeding time limits, so I changed a few things.
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+# Approach
+We create a map so we can keep track of whether an element exists. Then for two increasing pointers, see whether the map contains the third value that summed with the first two, would return the correct result.
 
+# Complexity
+- Time complexity: O(n^2)
+
+- Space complexity: O(n)
+
+# Code
+```
 class Solution {
     public List<List<Integer>> threeSum(int[] nums) {
         Map<Integer, Integer> map = new HashMap<>();
@@ -32,3 +36,5 @@ class Solution {
         return result;
     }
 }
+
+```
