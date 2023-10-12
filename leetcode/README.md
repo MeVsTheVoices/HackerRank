@@ -27,3 +27,12 @@ Given a string, find the longest substring without repeating characters.
 
 ## Add two numbers
 Given two numbers represented by linked lists, add them together.
+
+## Sort an array
+Given an array, sort it.
+
+## Design linked list
+Design a linked list.
+
+## Design hash map
+Design a hash map.
