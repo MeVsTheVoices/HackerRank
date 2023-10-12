@@ -36,3 +36,6 @@ Design a linked list.
 
 ## Design hash map
 Design a hash map.
+
+## Binary search
+Given a sorted array, find the index of a target value.
