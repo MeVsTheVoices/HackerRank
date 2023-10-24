@@ -4,10 +4,8 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 
 class MyHashMap {
-    private ArrayList<LinkedList<Integer>> map;
-
     public MyHashMap() {
-        map = new ArrayList<LinkedList<Integer>>();
+        new ArrayList<LinkedList<Integer>>();
     }
     
     public void put(int key, int value) {

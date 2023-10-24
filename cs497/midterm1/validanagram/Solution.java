@@ -1,3 +1,5 @@
+package cs497.midterm1.validanagram;
+
 import java.util.HashMap;
 import java.util.Map;
 
