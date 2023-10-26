@@ -17,7 +17,7 @@ class Solution {
 
     private int[] merge(int left[], int right[]) {
         int[] result = new int[left.length + right.length];
-        int i = 0, j = 0, k = 0, l = 0;
+        int i = 0, j = 0, k = 0;
         while ( i < left.length && j < right.length) {
             if (left[i] < right[j])
                 result[k++] = left[i++];
