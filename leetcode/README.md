@@ -45,3 +45,6 @@ Given an array, find all unique triplets that sum to 0.
 
 ## Valid parentheses
 Validate opening and closing parentheses, braces, and brackets.
+
+## Reverse integer
+Reverse an integer. If the integer is negative, preserve the negative sign. If the reversed integer overflows, return 0.
