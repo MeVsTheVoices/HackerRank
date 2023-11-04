@@ -1,3 +1,6 @@
+# Testing
+Testing is in python_testing\removeinvalidparenthesis_test.py
+
 # Intuition
 We only want to remove as many opening or closing parentheses as possible, to this end, we first find out how many of each we'd need to remove, then run a recursive search to find all possible valid expressions.
 
