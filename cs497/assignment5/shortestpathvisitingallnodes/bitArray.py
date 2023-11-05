@@ -19,6 +19,12 @@ class BitArray:
     
     def numberOfUnsetBits(self):
         return self.n - self.count
+    
+    def areAllSet(self):
+        return self.count == self.n
+    
+    def areAllUnset(self):
+        return self.count == 0
 
     def __getitem__(self, i):
         return self.bits[i]

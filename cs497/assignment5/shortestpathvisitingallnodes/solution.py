@@ -16,5 +16,7 @@ class Solution:
         # We use a queue to keep track of the nodes we've visited
         # and the number of nodes we've visited so far
         q = queue.Queue()
+        q.put((0, visited, visitedCount))
+        
         
 
