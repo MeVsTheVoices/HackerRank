@@ -12,24 +12,20 @@ public class SolutionTest {
         int k = 3;
         int result = s.shortestSubarray(nums, k);
         assertEquals(3, result);
-        System.out.println(result);
 
         nums = new int[] { 1 };
         k = 1;
         result = s.shortestSubarray(nums, k);
         assertEquals(1, result);
-        System.out.println(result);
 
         nums = new int[] { 1, 2 };
         k = 4;
         result = s.shortestSubarray(nums, k);
         assertEquals(-1, result);
-        System.out.println(result);
 
         nums = new int[] {84, -37, 32, 40, 95};
         k = 167;
         result = s.shortestSubarray(nums, k);
         assertEquals(3, result);
-        System.out.println(result);
     }
 }

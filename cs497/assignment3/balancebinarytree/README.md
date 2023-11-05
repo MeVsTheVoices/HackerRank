@@ -36,7 +36,6 @@ class Solution {
             return;
         
         inOrderTraversalHelper(root.left);
-        System.out.println(root.val);
         list.add(root.val);
         inOrderTraversalHelper(root.right);
     }

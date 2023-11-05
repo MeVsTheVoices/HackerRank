@@ -7,7 +7,6 @@ public class SolutionTest {
     public void testLongestPalindrome() {
         Solution solution = new Solution();
         String result = solution.longestPalindrome("babad");
-        System.out.println(result);
     }
     
 }

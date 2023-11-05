@@ -22,4 +22,3 @@ if __name__ == '__main__':
                 highest_score = score
                 best_divisor = i
 
-    print(best_divisor)

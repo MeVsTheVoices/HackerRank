@@ -9,7 +9,6 @@ class Solution {
             multiple *= 10;
         }
         multiple /= 10;
-        System.out.println(multiple);
         
         long lowMultiple = 10;
         boolean isPalindrome = true;
@@ -17,7 +16,6 @@ class Solution {
             long upperTerm = (x / multiple) % 10;
             long lowerTerm = (x % lowMultiple) / (lowMultiple / 10);
 
-            System.out.println(upperTerm + " " + lowerTerm);
 
             if (upperTerm != lowerTerm)
                 isPalindrome = false;

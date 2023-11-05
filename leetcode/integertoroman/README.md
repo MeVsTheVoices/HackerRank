@@ -28,7 +28,6 @@ class Solution:
 
         for i in map:
             while (num // i) >= 1:
-                print(str(i) + " " + map[i])
                 num -= i
                 res = res + map[i]
 

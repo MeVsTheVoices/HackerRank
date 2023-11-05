@@ -13,7 +13,6 @@ class Solution(object):
     def binarySearchHelper(self, arr, x, left, right):
         left, right = 0, len(arr) - 1
         mid = (left + right) // 2
-        print(left, right, mid)
         if left == right:
             return left
         elif arr[mid] > x:

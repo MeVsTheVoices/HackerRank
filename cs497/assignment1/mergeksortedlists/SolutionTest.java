@@ -21,7 +21,6 @@ public class SolutionTest {
         ListNode expected = new ListNode(1, new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(4, new ListNode(4, new ListNode(5, new ListNode(6))))))));
         while (result != null && expected != null) {
             assertEquals(expected.val, result.val);
-            System.out.println("expected: " + expected.val + " result: " + result.val);
             result = result.next;
             expected = expected.next;
         }
@@ -36,7 +35,6 @@ public class SolutionTest {
         expected = null;
         while (result != null && expected != null) {
             assertEquals(expected.val, result.val);
-            System.out.println("expected: " + expected.val + " result: " + result.val);
             result = result.next;
             expected = expected.next;
         }
@@ -53,7 +51,6 @@ public class SolutionTest {
 
         while (result != null && expected != null) {
             assertEquals(expected.val, result.val);
-            System.out.println("expected: " + expected.val + " result: " + result.val);
             result = result.next;
             expected = expected.next;
         }

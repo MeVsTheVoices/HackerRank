@@ -18,11 +18,9 @@ class Solution {
                 l2Term = l2Term.add(multiplier.multiply(BigInteger.valueOf(l2.val)));
                 l2 = l2.next;
             }
-            System.out.println(l1Term + " " + l2Term);
             multiplier = multiplier.multiply(BigInteger.valueOf(10));
         }
         BigInteger sum = l1Term.add(l2Term);
-        System.out.println(sum + " " + l1Term + " " + l2Term);
         BigInteger dividend = BigInteger.valueOf(10);
         ListNode root = new ListNode(0);
         ListNode current = root;
@@ -30,7 +28,6 @@ class Solution {
         for (; (!(sum.mod(dividend)).equals(BigInteger.valueOf(0))) || (sum.compareTo(BigInteger.valueOf(0)) == 1);) {
             BigInteger term = sum.mod(dividend);
             BigInteger value = term.divide(dividend.divide(BigInteger.valueOf(10)));
-            System.out.println(sum + " " + value);
             current.val = value.intValue();
             current.next = new ListNode(0);
             previous = current;

@@ -11,9 +11,6 @@ public class SolutionTest {
         int[] expected = {1, 2, 3, 5};
         Solution solution = new Solution();
         int[] actual = solution.sortArray(nums);
-        for (int i = 0; i < actual.length; i++) {
-            System.out.println(actual[i]);
-        }
         assertArrayEquals(expected, actual);
     }
 }
