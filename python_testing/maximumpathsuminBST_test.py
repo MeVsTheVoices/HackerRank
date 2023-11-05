@@ -2,7 +2,7 @@ import unittest
 from cs497.assignment5.maximumpathsuminBST.solution import Solution
 from cs497.assignment5.treeNode import TreeNode
 
-class TestSolution():
+class TestSolution(unittest.TestCase):
     def testMaxPathSum(self):
         sol = Solution()
         root = TreeNode(1)
