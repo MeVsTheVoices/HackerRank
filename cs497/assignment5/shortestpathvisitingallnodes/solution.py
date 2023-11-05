@@ -1,4 +1,5 @@
 import queue
+from typing import List
 from bitArray import BitArray
 
 class Solution:
