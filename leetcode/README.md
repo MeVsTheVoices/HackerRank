@@ -51,3 +51,6 @@ Reverse an integer. If the integer is negative, preserve the negative sign. If t
 
 ## Integer to roman
 Convert an integer to a roman numeral.
+
+## Remove element
+Given an array and a value, remove all instances of that value in place and return the new length.
