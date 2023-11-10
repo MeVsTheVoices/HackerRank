@@ -1,6 +1,3 @@
-import queue
-from typing import List
-
 class Solution:
     def shortestPathLength(self, graph: List[List[int]]) -> int:
         n = len(graph)
@@ -19,8 +16,4 @@ class Solution:
                     q.put((neighbor, state | (1 << neighbor), dist + 1))
                     visited.add((neighbor, state | (1 << neighbor)))
         return -1
-        
-
-
-        
 
