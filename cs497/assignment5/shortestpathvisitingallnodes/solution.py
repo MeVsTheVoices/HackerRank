@@ -1,23 +1,26 @@
 import queue
 from typing import List
-from bitArray import BitArray
 
 class Solution:
     def shortestPathLength(self, graph: List[List[int]]) -> int:
-        if len(graph) <= 1:
-            return 0
-        
-        # We use a bit array to keep track of the nodes we've visited
-        # We also keep track of the number of nodes we've visited
-        # and the number of nodes we've visited in total
-        visited = BitArray(len(graph))
-        visitedCount = 0
-        totalVisited = 0
-
-        # We use a queue to keep track of the nodes we've visited
-        # and the number of nodes we've visited so far
+        n = len(graph)
         q = queue.Queue()
-        q.put((0, visited, visitedCount))
+        visited = set()
+        for i in range(n):
+            q.put((i, 1 << i, 0))
+            visited.add((i, 1 << i))
+
+        while not q.empty():
+            node, state, dist = q.get()
+            if state == (1 << n) - 1:
+                return dist
+            for neighbor in graph[node]:
+                if (neighbor, state | (1 << neighbor)) not in visited:
+                    q.put((neighbor, state | (1 << neighbor), dist + 1))
+                    visited.add((neighbor, state | (1 << neighbor)))
+        return -1
         
+
+
         
 
