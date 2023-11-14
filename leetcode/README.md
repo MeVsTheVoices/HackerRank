@@ -57,3 +57,6 @@ Given an array and a value, remove all instances of that value in place and retu
 
 ## Set mismatch
 Given an array of integers, find the number that is duplicated and the number that is missing.
+
+## Hamming distance
+Given two integers, find the hamming distance between them.

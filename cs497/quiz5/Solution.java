@@ -1,7 +1,5 @@
 package cs497.quiz5;
 
-import cs497.quiz5.TreeNode;
-
 class Solution {
     public int sumOfLeftLeaves(TreeNode root) {
         return sumOfLeftTreeLeavesHelper(root);

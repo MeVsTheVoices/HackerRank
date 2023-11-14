@@ -4,9 +4,6 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-import cs497.quiz5.TreeNode;
-import cs497.quiz5.Solution;
-
 public class SolutionTest {
     @Test
     public void testSumOfLeftLeaves() {
