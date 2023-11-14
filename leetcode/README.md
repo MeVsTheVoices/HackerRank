@@ -54,3 +54,6 @@ Convert an integer to a roman numeral.
 
 ## Remove element
 Given an array and a value, remove all instances of that value in place and return the new length.
+
+## Set mismatch
+Given an array of integers, find the number that is duplicated and the number that is missing.
