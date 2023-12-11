@@ -1,3 +1,37 @@
+# Testing
+Testing is at ppython_testing/connectingcitieswithminimumcost_test.py
+
+# Intuition
+We're going to modify some code we wrote recently as we can be certain of its correctness. We modify the code from find all paths to take parameters for the source and destination nodes. As our graph is bidirectional we create two maps for each node, one for the edges going out and one for the edges coming in. We then iterate over every node in the graph and find all paths from that node to every other node. We then iterate over every path and find the minimum cost.
+
+
+# Approach
+- Build the graph
+    - Iterate over every connection and add it to the graph
+    - We store the weight of the edge as well
+    - We store the edge in both directions as the graph is bidirectional
+    - We store the edges in a list of tuples, where the first element is the node and the second element is the weight
+- Find all paths
+- Iterate over every node in the graph
+    - Iterate over every other node in the graph
+        - Find all paths from the current node to the other node
+        - Add the path to the list of paths
+- Find the minimum cost
+    - Iterate over every path
+        - Iterate over every edge in the path
+            - Accumulate the weight of the edges
+        - If the cost is less than the current minimum cost, set the minimum cost to the current cost
+
+
+# Complexity
+- Time complexity: O(n^2)
+    - In the worst case, were every node to point to every other node, we would have to iterate over every node in the graph for every node in the graph.
+
+- Space complexity: O(n^2)
+    - We keep two maps of size n, one for the graph and one for the paths. In the worst case, we would have to store every path from every node to every other node, which would be n^2.
+
+# Code
+```
 from typing import List
 
 class Solution:
@@ -47,3 +81,4 @@ class Solution:
                 elif edge[0] not in [p[0] for p in path]:
                     queue.append(path + [edge])
         return validPaths
+```

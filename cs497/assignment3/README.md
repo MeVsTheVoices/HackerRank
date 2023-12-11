@@ -11,3 +11,6 @@ Given inorder and preorder traversal of a tree, construct the binary tree.
 
 ## Largest value in each tree row
 Given a binary tree, return the largest value in each row.
+
+## Balance a binary search tree
+Given a binary search tree, return a balanced binary search tree with the same node values.
