@@ -60,3 +60,9 @@ Given an array of integers, find the number that is duplicated and the number th
 
 ## Hamming distance
 Given two integers, find the hamming distance between them.
+
+## String to integer
+Convert a string to an integer.
+
+## Valid Sudoku
+Given a 9x9 Sudoku board, determine if it is valid.
