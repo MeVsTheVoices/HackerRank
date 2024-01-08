@@ -1,25 +1,20 @@
 import unittest
 from cs497.interviewDEC5.solution import Solution
+from cs497.interviewDEC5.solution import ListNode
 
 class TestSolution(unittest.TestCase):
     def testMergeTwoLists(self):
+
         sol = Solution()
         # Test 1
-        list1 = [1,2,4]
-        list2 = [1,3,4]
-        result = sol.mergeTwoLists(list1, list2)
-        expected = [1,1,2,3,4,4]
-        self.assertEqual(expected, result)
-        # Test 2
-        list1 = []
-        list2 = []
-        result = sol.mergeTwoLists(list1, list2)
-        expected = []
-        self.assertEqual(expected, result)
-        # Test 3
-        list1 = []
-        list2 = [0]
-        result = sol.mergeTwoLists(list1, list2)
-        expected = [0]
-        self.assertEqual(expected, result)
-        
+        head1 = ListNode(0, ListNode(1, ListNode(1, ListNode(3))))
+        head2 = ListNode(0, ListNode(1, ListNode(1, ListNode(3))))
+        expected = ListNode(0, ListNode(0, ListNode(1, ListNode(1, ListNode(1, ListNode(1, ListNode(3, ListNode(3))))))))
+        actual = sol.mergeTwoLists(head1, head2)
+        while expected and actual:
+            self.assertEqual(expected.val, actual.val)
+            print(expected.val, actual.val)
+            expected = expected.next
+            actual = actual.next
+        self.assertIsNone(expected)
+        self.assertIsNone(actual)
