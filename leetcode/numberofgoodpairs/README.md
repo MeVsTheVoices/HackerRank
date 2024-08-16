@@ -7,7 +7,7 @@ As we're looking only for identically valued integers, we can store these indexe
 Subsequently, we iterate through all the keys in the map, for each of these, we then loop through for each subsequent index, if the index at k+1, k+2, ... is greater than the index k, we count upwards
 
 # Complexity
-- Time complexity: O(n^2)
+- Time complexity: O(n!)
 Conceptualize it this way. Insertion in a hashmap is O(1). We iterate first O(n). Say for example we were given a list of identical values. For each n, n - 1, n - 2, ..., we'd iterate n - 1, n - 2, n - 3, ... times.
 
 - Space complexity: O(n)
